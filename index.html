@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studify</title>
+    <link rel="icon" type="image/x-icon" href="./icons8-study-60.png" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <div id="pomodoro">
+        <!-- ============= POMODORO TIMER ============== -->
+        <div class="container">
+          <h1 class="container_header">POMODORO TIMER</h1>
+          <h1 class="timer">25:00</h1>
+          <div class="controls">
+            <button id="startBtn">Start</button>
+            <button id="resetBtn">Reset</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="TODO">
+        <!-- app  -->
+        <div class="todo-app">
+          <!-- app header  -->
+          <h1>TO DO LIST</h1>
+
+          <!-- input group  -->
+          <form class="input-group">
+            <input
+              type="text"
+              name=""
+              id="taskInput"
+              placeholder="Add a task"
+              required
+            />
+            <button class="btn add-task-btn" onclick="addTask()">
+              Add Task
+            </button>
+          </form>
+
+          <!-- task list  -->
+          <ul id="taskList"></ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribute">
+      Created by
+      <a href="https://github.com/nj-tan" target="_blank"> Neiljohn Tan </a>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
